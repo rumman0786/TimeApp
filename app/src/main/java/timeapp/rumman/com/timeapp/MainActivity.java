@@ -85,7 +85,7 @@ public class MainActivity extends ActionBarActivity {
 
         //sqlite query to insert data into timetable for start of day or replace if entry key already exists.
         String query = "INSERT OR REPLACE INTO "+ TimeTableContract.timeTable +" ( "+ timeTableContract.colEntryKey +", "+ timeTableContract.colStart +", "+ timeTableContract.colDate +") "
-                + "VALUES ( '"+ entryKey +"' , '"+ start +"' , '"+ date +"') ";
+                + "VALUES ( "+ entryKey +" , '"+ start +"' , '"+ date +"') ";
 
         db.execSQL(query);
     }

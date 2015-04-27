@@ -30,9 +30,9 @@ public class TimeTableContract extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE IF NOT EXISTS "+ timeTable +" ( "+colID+ " INTEGER PRIMARY KEY AUTOINCREMENT, "+
                 colEntryKey+ " VARCHAR UNIQUE, " +
                 colStart+  " VARCHAR, " +
-                colStop+  " VARCHAR " +
-                colDailyMinutes+  " VARCHAR "+
-                colDuration+  " VARCHAR "+
+                colStop+  " VARCHAR, " +
+                colDailyMinutes+  " VARCHAR, "+
+                colDuration+  " VARCHAR, "+
                 colDate+  " VARCHAR "+
                 ") ");
 
